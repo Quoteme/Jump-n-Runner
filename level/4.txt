@@ -1,0 +1,34 @@
+player_speed		= 200;
+player_jump_height	= 270;
+player_gravity		= 500;
+tile_size			= 32;
+use_windmill 		= false;
+use_title 			= false;
+default_bottom		= true;
+max_title_angle		= 5;
+title_angle_back 	= false
+function preload() {
+	//sprites
+		//essential
+			game.load.image('sky', 'assets/bg0.png');
+			game.load.image('flag_red', 'assets/flag_red.png');
+			game.load.spritesheet('dude', 'assets/player.png', 20, 36);
+			game.load.image('bottom', 'assets/ground.png');
+			game.load.image('flare', 'assets/flame_particle.png');
+			game.load.image('inv_flare', 'assets/inversion_particle.png');
+			game.load.image('inv_dev', 'assets/inversion_device.png');
+
+		//specific
+			game.load.image('ground', 'assets/platform.png');
+			game.load.image('tree', 'assets/tree.png');
+			game.load.image('tree_spruce', 'assets/tree_2.png');
+			game.load.image('bridge', 'assets/bridge.png');
+			game.load.image('waterfall', 'assets/waterfall.png');
+			game.load.image('fuel', 'assets/fuel.png');
+			game.load.image('signr', 'assets/singr.png');
+			game.load.image('carrier', 'assets/carrier.png');
+			//house
+				game.load.image('door', 'assets/door.png');
+				game.load.image('house', 'assets/house.png');
+				game.load.image('windmill', 'assets/windmill.png');
+}

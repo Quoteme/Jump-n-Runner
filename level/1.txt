@@ -1,0 +1,26 @@
+player_speed		= 200;
+player_jump_height	= 270;
+player_gravity		= 500;
+tile_size			= 32;
+use_windmill 		= false;
+use_title 			= false;
+default_bottom		= true;
+max_title_angle		= 5;
+title_angle_back 	= false
+function preload() {
+	//sprites
+		//essential
+			game.load.image('sky', 'assets/bg0.png');
+			game.load.image('flag_red', 'assets/flag_red.png');
+			game.load.spritesheet('dude', 'assets/player.png', 20, 36);
+
+		//specific
+			game.load.image('ground', 'assets/platform.png');
+			game.load.image('ground_2', 'assets/platform_2.png');
+			game.load.image('ground_broken', 'assets/platform_broken.png');
+			game.load.image('bottom', 'assets/ground.png');
+			game.load.image('ladder', 'assets/ladder.png');
+			game.load.image('tree', 'assets/tree.png');
+			game.load.image('bridge', 'assets/bridge.png');
+			game.load.image('waterfall', 'assets/waterfall.png')
+}
